@@ -11,7 +11,7 @@ SightingView.prototype.render = function (sighting) {
   const species = this.createHeading(sighting.species);
   sightingContainer.appendChild(species);
 
-  const location = this.createDetail('Location', sighting.species);
+  const location = this.createDetail('Location', sighting.location);
   sightingContainer.appendChild(location);
 
   const date = this.createDetail('Date', sighting.date);
